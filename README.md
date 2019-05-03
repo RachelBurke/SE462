@@ -1,5 +1,5 @@
 # SE462 - Modernizing Legacy Software - C#
-**Professor: Dr. Panos Linos** </br>
+**Professor: Dr. Panagiotis Linos** </br>
 **Jan - May 2019**
 
 This repository contains files from my SE462 course taken in the Spring of 2019 at Butler University. It contains the textbook, textbook notes, and semester legacy code project.
