@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FerryLegacy.Booking" Collapsed="true">
+    <Position X="0.5" Y="0.75" Width="1.5" />
+    <AssociationLine Name="Journey" Type="FerryLegacy.Journey">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.158" Y="0.076" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAgAAAAAAAAAAAACEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Booking.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Journey" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FerryLegacy.Ferry" Collapsed="true">
+    <Position X="5.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAQAgAAAAAAAAQQAACAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ferry.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="journey" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FerryLegacy.FerryManager" Collapsed="true">
+    <Position X="5.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAACAAAAAAAAAAAIAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>FerryManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_ferries" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="FerryLegacy.Journey" Collapsed="true">
+    <Position X="3" Y="0.75" Width="1.5" />
+    <AssociationLine Name="Ferry" Type="FerryLegacy.Ferry">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.031" Y="-0.273" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Origin" Type="FerryLegacy.Port" ManuallyRouted="true">
+      <Path>
+        <Point X="3.547" Y="0.75" />
+        <Point X="3.547" Y="0.183" />
+        <Point X="8.953" Y="0.183" />
+        <Point X="8.953" Y="0.75" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.11" Y="0.139" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Destination" Type="FerryLegacy.Port" ManuallyRouted="true">
+      <Path>
+        <Point X="4.156" Y="0.75" />
+        <Point X="4.156" Y="0.351" />
+        <Point X="8.344" Y="0.351" />
+        <Point X="8.344" Y="0.75" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.11" Y="0.123" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACBAAAAAAAgAAAAggAAAAAACAAAACEAAAEAAgAAAA=</HashCode>
+      <FileName>Journey.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Ferry" />
+      <Property Name="Origin" />
+      <Property Name="Destination" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FerryLegacy.Port" Collapsed="true">
+    <Position X="8" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAgAAAAAAAAAAAAQAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Port.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Ferries" />
+      <Property Name="TimeTable" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="FerryLegacy.PortManager" Collapsed="true">
+    <Position X="8" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAgAAgAAAIAAAAAAAAACAAAAAQAAAAAAAA=</HashCode>
+      <FileName>PortManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_ports" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="FerryLegacy.Program" Collapsed="true">
+    <Position X="5.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FerryLegacy.TimeTableEntry" Collapsed="true">
+    <Position X="10" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAABAAAAAAAAAAAAAAAAAAABAAAAEAAAAAQA=</HashCode>
+      <FileName>TimeTableEntry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FerryLegacy.TimeTableManager" Collapsed="true">
+    <Position X="10" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>TimeTableManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_timeTableEntries" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="FerryLegacy.ManagementSystem" Collapsed="true">
+    <Position X="5.5" Y="3.25" Width="1.5" />
+    <AssociationLine Name="_bookingManager" Type="FerryLegacy.BookingManager" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.5" Y="3.625" />
+        <Point X="1.25" Y="3.625" />
+        <Point X="1.25" Y="2.562" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="_journeyManager" Type="FerryLegacy.JourneyManager" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.5" Y="3.285" />
+        <Point X="3.75" Y="3.285" />
+        <Point X="3.75" Y="2.562" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="_ferryManager" Type="FerryLegacy.FerryManager" FixedFromPoint="true">
+      <Path>
+        <Point X="6.25" Y="3.25" />
+        <Point X="6.25" Y="2.562" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="_portManager" Type="FerryLegacy.PortManager" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7" Y="3.438" />
+        <Point X="8.75" Y="3.438" />
+        <Point X="8.75" Y="2.562" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="_timeTableManager" Type="FerryLegacy.TimeTableManager" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7" Y="3.625" />
+        <Point X="10.75" Y="3.625" />
+        <Point X="10.75" Y="2.562" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAIDgAQIAAAIAAAAACAAQAARAAAkJAAA=</HashCode>
+      <FileName>ManagementSystem.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_bookingManager" />
+      <Field Name="_journeyManager" />
+      <Field Name="_ferryManager" />
+      <Field Name="_portManager" />
+      <Field Name="_timeTableManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FerryLegacy.Commands" Collapsed="true">
+    <Position X="5.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAIAAgBQIAgABAQABCBBAACAAAAAIQCwAA4BCBAAQ=</HashCode>
+      <FileName>Commands.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FerryLegacy.BookingManager" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAABAAAAAAAAABAAAAAAAAABAAAAACAA=</HashCode>
+      <FileName>BookingManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_bookings" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="FerryLegacy.JourneyManager" Collapsed="true">
+    <Position X="3" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAASAABAAA=</HashCode>
+      <FileName>JourneyManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_journeys" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

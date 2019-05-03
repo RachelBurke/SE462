@@ -1,0 +1,5 @@
+1) Opened FerryLegacy.sln
+2) Ran executable file for FerryLegacy
+3) Displayed bookings, ferry departures, ports, made bookings (just tested all the available operations)
+4) Looked into code
+5) Saw multiple objects that could be combined (Ex. Booking -> Object , Bookings -> ??? , JourneyBookingService -> Actually the booking functions)
