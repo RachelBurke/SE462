@@ -1,4 +1,4 @@
-# SE462 - Modernizing Legacy Software - C++
+# SE462 - Modernizing Legacy Software - C#
 **Professor: Dr. Panos Linos** </br>
 **Jan - May 2019**
 
